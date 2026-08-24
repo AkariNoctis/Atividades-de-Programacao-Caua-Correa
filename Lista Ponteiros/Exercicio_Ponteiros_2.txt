@@ -1,0 +1,21 @@
+|Exercício 2:
+Analise o código a seguir:
+#include <stdio.h>
+int main(void) {
+ int x = 10;
+ int *p = &x;
+ int *q = p;
+ (*p) += 5;
+ (*q) *= 2;
+ printf("x = %d\n", x);
+ printf("*p = %d\n", *p);
+ printf("*q = %d\n", *q);
+ return 0;
+}
+a) Quais valores serão exibidos?
+R: 30 em todas as variaveis, pois todas apontam para o mesmo endereço de memória.
+
+b) Por que a alteração realizada por q também modifica os valores acessados por p e x?
+R: Isso acontece pois *q = p, copiando o mesmo endereço que *p tem armazenado, sendo esse o endereço de x,assim podendo modificar o valor na fonte do endereço original.
+c) Os ponteiros p e q armazenam o mesmo endereço? Justifique.
+R: Sim, A linha int *q = p; copia o endereço que estava em p e joga para dentro de q. por isso, os dois passam a guardar o mesmo endereço da variável x.

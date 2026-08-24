@@ -1,0 +1,10 @@
+A)
+10, 10, 20, 21
+
+B)
+O ponteiro p aponta para a segunda posição do vetor (o elemento que originalmente era 20). Ele mudou de posição apenas uma vez, na segunda linha de printf.
+
+C)
+{10, 21, 30, 40}
+D)
+p++: Muda o ponteiro de lugar. Faz ele avançar para a próxima caixinha da memória (próxima posição do vetor).*p++: Primeiro pega o valor de onde o ponteiro está agora para usar no comando (como o printf). Só depois que o comando acaba, ele avança o ponteiro para a próxima posição.(*p)++: Não muda o ponteiro de lugar. Ele pega o número que está dentro da caixinha atual e soma +1 direto nesse número.
