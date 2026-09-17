@@ -1,0 +1,3 @@
+Por que VerificaNum e ConsultaSaldo devem estar no TAD Conta Bancária e não no TAD Banco?
+
+R-Saber se um número pertence a uma conta ou olhar o saldo dela é tarefa da Conta, e não do Banco. O Banco só deve gerenciar a lista de contas em geral, e se o TAD Banco precisasse inspecionar diretamente os campos internos da conta, qualquer alteração futura na estrutura de ContaBancaria quebraria o código do Banco.
